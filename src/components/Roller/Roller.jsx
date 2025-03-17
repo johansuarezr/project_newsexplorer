@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import "./Roller.css";
 
-const Drawer = ({ handleOpenLoginModal, handleCloseModal, isLoggedIn }) => {
+const Roller = ({ handleOpenLoginModal, handleCloseModal, isLoggedIn }) => {
   return (
     <div className="roller">
       <div className="roller__container">
@@ -40,4 +40,4 @@ const Drawer = ({ handleOpenLoginModal, handleCloseModal, isLoggedIn }) => {
   );
 };
 
-export default Drawer;
+export default Roller;

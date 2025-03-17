@@ -57,7 +57,7 @@ const NewsCard = ({
       ></button>
       {!isLoggedIn && location === "/" ? (
         <div className="card__alert-popup">Signin to save article</div>
-      ) : location === "/saed-news" ? (
+      ) : location === "/saved-news" ? (
         <div className="card__alert-popup">Remove from saved</div>
       ) : null}
       <div className="card__content">

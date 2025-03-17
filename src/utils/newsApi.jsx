@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_NEWS_EXPLORER_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 const baseUrl =
   process.env.NODE_ENV === "production"
@@ -16,11 +16,10 @@ const processServerResponce = (res) => {
   return res.json();
 };
 
-// 7 days ago
 const get7DaysAgo = () => {
   const date = new Date();
   date.setDate(date.getDate() - 7);
-  return date.toISOString().split("T")[0]; // "YYYY-MM-DD"
+  return date.toISOString().split("T")[0];
 };
 
 const getToday = () => {

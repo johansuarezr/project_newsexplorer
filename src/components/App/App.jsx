@@ -1,7 +1,7 @@
 import Header from "../Header/Header";
 import UserContext from "../../context/UserContext.jsx";
 import Footer from "../Footer/Footer";
-import Drawer from "../Drawer/Drawer.jsx";
+import Roller from "../Roller/Roller.jsx";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import getNews from "../../utils/newsApi.jsx";
@@ -117,8 +117,8 @@ const App = () => {
     }
   };
 
-  const handleDrawerOpen = () => {
-    setActiveModal("drawer");
+  const handleRollerOpen = () => {
+    setActiveModal("roller");
   };
 
   const handleOpenLoginModal = () => {
@@ -145,7 +145,7 @@ const App = () => {
             handleOpenLoginModal={handleOpenLoginModal}
             handleOpenRegisterModal={handleOpenRegisterModal}
             handleSearch={handleSearch}
-            handleDrawerOpen={handleDrawerOpen}
+            handleRollerOpen={handleRollerOpen}
             handleOnLoggout={handleLoggout}
             savedArticles={savedArticles}
           />
@@ -162,8 +162,8 @@ const App = () => {
           />
           <Footer />
         </div>
-        {activeModal === "drawer" && (
-          <Drawer
+        {activeModal === "roller" && (
+          <Roller
             handleCloseModal={handleCloseModal}
             handleOpenLoginModal={handleOpenLoginModal}
             isLoggedIn={isLoggedIn}

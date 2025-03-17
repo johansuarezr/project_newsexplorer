@@ -5,7 +5,7 @@ import UserContext from "../../context/UserContext";
 
 const Navigation = ({
   handleOpenLoginModal,
-  handleDrawerOpen,
+  handleRollerOpen,
   handleOnLoggout,
 }) => {
   const { currentUser, isLoggedIn } = useContext(UserContext);
@@ -54,7 +54,7 @@ const Navigation = ({
         )}
       </div>
       <button
-        onClick={handleDrawerOpen}
+        onClick={handleRollerOpen}
         type="button"
         className="nav__menu-btn"
       ></button>
