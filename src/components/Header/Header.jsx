@@ -51,7 +51,7 @@ const Header = ({
             {isHome ? "the world?" : ""}
           </span>
         </h1>
-        <p
+        <div
           className={
             isHome
               ? "header__sub-title header__sub-title_type_home"
@@ -78,7 +78,7 @@ const Header = ({
               `
             </div>
           )}
-        </p>
+        </div>
       </div>
       {isHome && <SearchForm handleSearch={handleSearch} />}
     </header>

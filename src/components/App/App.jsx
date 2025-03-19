@@ -16,7 +16,7 @@ const App = () => {
   const [currentUser, setCurrentUser] = useState({});
   const [activeModal, setActiveModal] = useState("");
   const [newsArticles, setNewsArticles] = useState({});
-  const [savedArticles, setSavedArticles] = useState({});
+  const [savedArticles, setSavedArticles] = useState([]);
   const [visibleArticles, setVisableArticles] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);

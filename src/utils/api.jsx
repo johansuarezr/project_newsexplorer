@@ -2,7 +2,7 @@ const articles = [
   {
     isSaved: true,
     title: "Breaking News: Tech Innovation in 2024",
-    urlToImage: "https://via.placeholder.com/300",
+    urlToImage: "https://picsum.photos/300",
     keyword: "Technology",
     content:
       "The latest advancements in AI and robotics are reshaping the industry...",
@@ -12,7 +12,7 @@ const articles = [
   {
     isSaved: true,
     title: "Finance: Stock Market Hits Record Highs",
-    urlToImage: "https://via.placeholder.com/300",
+    urlToImage: "https://picsum.photos/300",
     keyword: "Finance",
     content: "The stock market soared to new highs...",
     pubDate: "2024-02-08",
