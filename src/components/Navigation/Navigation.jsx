@@ -12,7 +12,15 @@ const Navigation = ({
   const location = useLocation();
 
   return (
-    <nav className="nav">
+    <nav
+      className={`nav ${
+        location.pathname === "/"
+          ? "nav__home"
+          : location.pathname === "/saved-news"
+          ? "nav__saved-news"
+          : ""
+      }`}
+    >
       <div className="nav__logo">NewsExplorer</div>
       <div className="nav__links">
         <Link

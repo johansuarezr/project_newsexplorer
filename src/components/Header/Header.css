@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 80px;
 }
 
 .header_type_home {
   justify-content: space-between;
   background-image: url(../../assets/main-page.jpg);
   background-size: cover;
+  padding-bottom: 80px;
 }
 
 .header_type_saved-news {
@@ -36,7 +36,6 @@
 .header__title {
   font-family: "Roboto Slab";
   font-weight: 400;
-  color: white;
 }
 
 .header__title_type_home {
@@ -45,6 +44,7 @@
   margin: 0 auto 32px;
   font-size: 60px;
   line-height: 64px;
+  color: white;
 }
 
 .header__title_type_saved-news {
@@ -65,7 +65,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: white;
 }
 
 .header__sub-title_type_home {
@@ -73,6 +72,7 @@
   max-width: 608px;
   width: 100%;
   height: 24px;
+  color: white;
 }
 
 @media (max-width: 768px) {

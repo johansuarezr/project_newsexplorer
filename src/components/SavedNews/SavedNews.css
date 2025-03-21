@@ -1,14 +1,14 @@
 .saved-news {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 equal columns */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   width: 100%;
   padding: 102px 62px;
   margin: 0;
-  background-color: #fff;
+  background-color: rgba(245, 246, 247, 1);
   color: white;
-  justify-items: start; /* Ensures items align to the left in the last row */
+  justify-items: start;
 }
 
 @media screen and (max-width: 768px) {

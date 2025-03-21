@@ -36,6 +36,7 @@ const Header = ({
         handleRollerOpen={handleRollerOpen}
         handleOnLoggout={handleOnLoggout}
       />
+
       <div className={isHome ? "header__hero" : "header__hero_type_saved-news"}>
         <h1
           className={
@@ -46,7 +47,7 @@ const Header = ({
         >
           {isHome
             ? "What's going on in"
-            : `${currentUser.name}, you have ${articles.length} Saved articles`}
+            : `${currentUser.name}, you have ${articles.length} saved articles`}
           <span className="header__title-second-line">
             {isHome ? "the world?" : ""}
           </span>
@@ -71,7 +72,11 @@ const Header = ({
             </>
           ) : (
             <div className="header__keywords">
-              `By keywords: {displayKeywords.join(", ")}
+              `By keywords:{" "}
+              <span className="header__keywords-bold">
+                {" "}
+                {displayKeywords.join(", ")}{" "}
+              </span>
               {remainingCount > 0
                 ? ` and ${remainingCount} other${remainingCount > 1 ? "s" : ""}`
                 : ""}
