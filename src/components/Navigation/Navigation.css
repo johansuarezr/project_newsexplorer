@@ -89,6 +89,14 @@
 }
 
 .nav__home .nav__link-pill-btn {
+  background-image: url(../../assets/logout.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  filter: brightness(0) invert(1);
+}
+
+.nav__home .nav__link-pill-btn.signed-out {
+  background-image: none;
   text-align: center;
 }
 

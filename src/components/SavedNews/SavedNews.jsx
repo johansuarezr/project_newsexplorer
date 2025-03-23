@@ -4,13 +4,13 @@ import "./SavedNews.css";
 import { useOutletContext } from "react-router-dom";
 
 const SavedNews = () => {
-  const { savedArticles, setSavedArticles } = useOutletContext();
+  const { savedArticles, handleSaveArticle } = useOutletContext();
 
   const handleRemoveArticle = (_id) => {
     const updatedArticles = savedArticles.filter(
       (article) => article._id !== _id
     );
-    setSavedArticles(updatedArticles);
+    handleSaveArticle({ _id, isSaved: false, article: updatedArticles });
   };
 
   //   {

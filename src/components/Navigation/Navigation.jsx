@@ -55,7 +55,7 @@ const Navigation = ({
           <button
             type="button"
             onClick={handleOpenLoginModal}
-            className="nav__link-pill-btn"
+            className="nav__link-pill-btn signed-out"
           >
             Sign in
           </button>
