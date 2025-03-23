@@ -4,7 +4,15 @@ import "./SavedNews.css";
 import { useOutletContext } from "react-router-dom";
 
 const SavedNews = () => {
-  const { savedArticles } = useOutletContext();
+  const { savedArticles, setSavedArticles } = useOutletContext();
+
+  const handleRemoveArticle = (_id) => {
+    const updatedArticles = savedArticles.filter(
+      (article) => article._id !== _id
+    );
+    setSavedArticles(updatedArticles);
+  };
+
   //   {
   //     title: "Breaking News: Tech Innovation in 2024",
   //     urlToImage: cardImage, // Using the variable
@@ -46,7 +54,11 @@ const SavedNews = () => {
   return (
     <ul className="saved-news">
       {savedArticles.map((article, index) => (
-        <NewsCard key={index} {...article} />
+        <NewsCard
+          key={index}
+          {...article}
+          handleRemoveArticle={handleRemoveArticle}
+        />
       ))}
     </ul>
   );

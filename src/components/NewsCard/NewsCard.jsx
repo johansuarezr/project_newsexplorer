@@ -12,6 +12,7 @@ const NewsCard = ({
   content,
   publishedAt,
   author,
+  handleRemoveArticle,
 }) => {
   const { isLoggedIn } = useContext(UserContext);
   const { handleSaveArticle } = useOutletContext();
@@ -42,13 +43,17 @@ const NewsCard = ({
     handleSaveArticle({ _id, isSaved: updateMarked, article: updatedArticle });
   };
 
+  const handleRemove = () => {
+    handleRemoveArticle(_id);
+  };
+
   return (
     <li className="card">
       <img src={urlToImage} alt="Card image" className="card__image" />
       {location === "/saved-news" && <div className="card__tag">{keyword}</div>}
       <button
         type="button"
-        onClick={handleSaveArticles}
+        onClick={location === "/saved-news" ? handleRemove : handleSaveArticles}
         className={
           location === "/saved-news"
             ? "card__btn card__delete-btn"
