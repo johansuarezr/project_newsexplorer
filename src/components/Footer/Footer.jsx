@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer__copy">© 2023 Supersite, Powered by News API</p>
+      <p className="footer__copy">© 2025 Supersite, Powered by News API</p>
       <div className="footer__icons-links">
         <div className="footer__links">
           <Link to="/" className="footer__link">

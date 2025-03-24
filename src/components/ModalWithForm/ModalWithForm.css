@@ -142,11 +142,16 @@
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 320px) {
   .modal__close {
     bottom: calc(100% + 16px);
-    left: calc(100% + -32px);
+    left: calc(100% + -55px);
     width: 24px;
     height: 24px;
+  }
+
+  .modal__container {
+    height: 742px;
+    top: 71px;
   }
 }

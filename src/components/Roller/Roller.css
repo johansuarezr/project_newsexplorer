@@ -80,4 +80,10 @@
   .roller {
     display: flex;
   }
+
+  .roller__close-btn {
+    background-color: transparent;
+    padding: 15px;
+    background-size: 30px;
+  }
 }
