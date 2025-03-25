@@ -20,6 +20,7 @@
   max-width: 600px;
   margin-top: 51px;
   color: #1a1b22;
+  margin-right: 56px;
 }
 
 .about__header {
@@ -58,6 +59,7 @@
   .about__content {
     max-width: 424px;
     margin-top: 0px;
+    margin-right: 0;
   }
 
   .about__paragraph {

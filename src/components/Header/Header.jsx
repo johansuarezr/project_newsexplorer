@@ -46,7 +46,7 @@ const Header = ({
           }
         >
           {isHome
-            ? "What's going on in"
+            ? "What's going on in "
             : `${currentUser.name}, you have ${articles.length} saved articles`}
           <span className="header__title-second-line">
             {isHome ? "the world?" : ""}
