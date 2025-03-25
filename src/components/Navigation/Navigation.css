@@ -137,5 +137,10 @@
 
   .nav__menu-btn {
     display: block;
+    background-image: url(../../assets/menu-black.svg);
+  }
+
+  .nav__home .nav__menu-btn {
+    background-image: url(../../assets/menu.svg);
   }
 }
