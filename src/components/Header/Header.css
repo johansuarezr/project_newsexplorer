@@ -139,3 +139,30 @@
     margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 321px) {
+  .header__hero {
+    padding-left: 16px;
+    margin: 30px 0 122px;
+  }
+
+  .header__hero_type_saved-news {
+    padding-left: 16px;
+  }
+
+  .header__sub-title_device_tablet {
+    display: inline;
+  }
+
+  .header__sub-title_device_mobile {
+    display: block;
+  }
+
+  .header__title-second-line {
+    display: inline;
+  }
+
+  .header__keywords {
+    margin-top: 50px;
+  }
+}

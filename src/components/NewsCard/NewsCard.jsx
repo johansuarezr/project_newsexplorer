@@ -49,7 +49,7 @@ const NewsCard = ({
 
   return (
     <li className="card">
-      <img src={urlToImage} alt="Card image" className="card__image" />
+      <img src={urlToImage} alt="News Image" className="card__image" />
       {location === "/saved-news" && <div className="card__tag">{keyword}</div>}
       <button
         type="button"

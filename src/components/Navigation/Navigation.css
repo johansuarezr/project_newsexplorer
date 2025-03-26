@@ -144,3 +144,38 @@
     background-image: url(../../assets/menu.svg);
   }
 }
+
+@media screen and (max-width: 618px) {
+  .nav__home .nav__link-pill-btn {
+    background-image: none;
+    text-align: center;
+  }
+
+  .nav__link-pill-btn {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .nav {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .nav__logo {
+    font-size: 16px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__menu-btn {
+    display: block;
+    background-image: url(../../assets/menu-black.svg);
+  }
+
+  .nav__home .nav__menu-btn {
+    background-image: url(../../assets/menu.svg);
+  }
+}
