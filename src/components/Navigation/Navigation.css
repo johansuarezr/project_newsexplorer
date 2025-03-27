@@ -98,6 +98,7 @@
 .nav__home .nav__link-pill-btn.signed-out {
   background-image: none;
   text-align: center;
+  width: 176px;
 }
 
 .nav__menu-btn {

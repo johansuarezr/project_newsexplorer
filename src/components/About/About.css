@@ -20,7 +20,8 @@
   max-width: 600px;
   margin-top: 51px;
   color: #1a1b22;
-  margin-right: 56px;
+  margin-right: 216px;
+  margin-left: 56px;
 }
 
 .about__header {
@@ -39,6 +40,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  width: 600px;
 }
 
 .about__paragraph-seperater {
@@ -64,6 +66,7 @@
 
   .about__paragraph {
     height: 168px;
+    width: 424px;
   }
 
   .about__header {
@@ -86,6 +89,7 @@
 
   .about__paragraph {
     height: 240px;
+    width: 288px;
   }
 }
 
@@ -109,6 +113,7 @@
 
   .about__paragraph {
     height: 240px;
+    width: 288px;
   }
 }
 
