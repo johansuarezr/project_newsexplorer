@@ -16,12 +16,6 @@ const processServerResponce = (res) => {
   return res.json();
 };
 
-// const options = {
-//   month: "long",
-//   day: "numeric",
-//   year: "numeric",
-// };
-
 const get7DaysAgo = () => {
   const date = new Date();
   date.setDate(date.getDate() - 7);
