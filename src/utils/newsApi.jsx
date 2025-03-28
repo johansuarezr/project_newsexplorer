@@ -16,16 +16,20 @@ const processServerResponce = (res) => {
   return res.json();
 };
 
-const options = {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-};
+// const options = {
+//   month: "long",
+//   day: "numeric",
+//   year: "numeric",
+// };
 
 const get7DaysAgo = () => {
   const date = new Date();
-  date.toLocaleString("en-US", options);
   date.setDate(date.getDate() - 7);
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
   // const date = new Date();
   // // date.setDate(date.getDate() - 7);
   // // return date.toISOString().split("T")[0];
@@ -33,7 +37,11 @@ const get7DaysAgo = () => {
 
 const getToday = () => {
   const date = new Date();
-  date.toLocaleString("en-US", options);
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
   // return new Date().toISOString().split("T")[0];
 };
 
