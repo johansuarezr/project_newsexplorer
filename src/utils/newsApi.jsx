@@ -16,14 +16,25 @@ const processServerResponce = (res) => {
   return res.json();
 };
 
+const options = {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+};
+
 const get7DaysAgo = () => {
   const date = new Date();
+  date.toLocaleString("en-US", options);
   date.setDate(date.getDate() - 7);
-  return date.toISOString().split("T")[0];
+  // const date = new Date();
+  // // date.setDate(date.getDate() - 7);
+  // // return date.toISOString().split("T")[0];
 };
 
 const getToday = () => {
-  return new Date().toISOString().split("T")[0];
+  const date = new Date();
+  date.toLocaleString("en-US", options);
+  // return new Date().toISOString().split("T")[0];
 };
 
 const parseNewsData = (newsData) => {

@@ -99,6 +99,7 @@
     margin-bottom: 16px;
   }
 
+
   .header__sub-title_device_tablet {
     display: block;
     text-align: left;
@@ -110,6 +111,14 @@
     line-height: 34px;
     height: 68px;
     width: 336px;
+  }
+
+  .header__title-second-line {
+    display: inline;
+  }
+
+  .header_type_home {
+    background-position: center;
   }
 }
 
