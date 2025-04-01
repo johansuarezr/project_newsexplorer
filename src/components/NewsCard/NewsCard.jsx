@@ -19,6 +19,12 @@ const NewsCard = ({
   const [marked, setIsMarked] = useState(false);
   const location = useLocation().pathname;
 
+  const formattedPublishedAt = new Date(publishedAt).toLocaleString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
   const handleCardClassElem = `card__btn ${
     marked ? "card__save-btn_marked" : "card__save-btn"
   }`;
@@ -66,7 +72,7 @@ const NewsCard = ({
         <div className="card__alert-popup">Remove from saved</div>
       ) : null}
       <div className="card__content">
-        <p className="card__pub-date">{publishedAt}</p>
+        <p className="card__pub-date">{formattedPublishedAt}</p>
         <h3 className="card__header">{title}</h3>
         <p className="card__paragraph">{content}</p>
         <p className="card__author">{author}</p>
