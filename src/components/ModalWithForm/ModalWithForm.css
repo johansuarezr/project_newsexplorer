@@ -142,7 +142,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 540px) {
   .modal__close {
     bottom: calc(100% + 16px);
     left: calc(100% + -55px);

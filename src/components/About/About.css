@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 540px) {
   .about {
     flex-direction: column;
     padding: 32px 16px 128px;
@@ -96,24 +96,6 @@
 @media screen and (max-width: 618px) {
   .about__content {
     margin-left: 20px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .about {
-    flex-direction: column;
-    padding: 32px 16px 128px;
-  }
-
-  .about__author-image {
-    max-width: 272px;
-    height: 272px;
-    margin: 0 auto 24px;
-  }
-
-  .about__paragraph {
-    height: 240px;
-    width: 288px;
   }
 }
 

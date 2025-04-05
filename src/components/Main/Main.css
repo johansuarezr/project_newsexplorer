@@ -77,7 +77,7 @@ main {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 540px) {
   .main__header {
     margin-top: 32px;
     padding-left: 16px;
@@ -98,7 +98,7 @@ main {
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 540px) {
   .main__card-wrap {
     display: flex;
     flex-direction: column;

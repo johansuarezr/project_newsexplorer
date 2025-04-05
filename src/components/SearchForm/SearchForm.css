@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 540px) {
   .search-form {
     max-width: 288px;
     width: 100%;
@@ -111,22 +111,6 @@
     display: none;
   }
 
-  .search-form__btn_mobile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .search-form {
-    max-width: 288px;
-    width: 100%;
-  }
-
-  .search-form__btn {
-    display: none;
-  }
   .search-form__btn_mobile {
     display: block;
     margin-left: auto;

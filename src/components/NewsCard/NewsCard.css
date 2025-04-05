@@ -168,22 +168,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .card {
-    max-width: 288px;
-    margin-bottom: 10px;
-  }
-
-  .card:last-child {
-    margin-bottom: 0px;
-  }
-
-  .card__image {
-    height: 186px;
-  }
-}
-
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 540px) {
   .card {
     max-width: 288px;
     margin-bottom: 10px;
