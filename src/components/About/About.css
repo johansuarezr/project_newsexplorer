@@ -6,6 +6,8 @@
   padding: 80px 104px;
   color: #1a1b22;
   background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .about__author-image {
@@ -40,14 +42,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  width: 600px;
+  max-width: 600px;
 }
 
 .about__paragraph-seperater {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .about {
     padding: 40px 40px 61px;
   }
@@ -61,17 +63,30 @@
   .about__content {
     max-width: 424px;
     margin-top: 0px;
-    margin-right: 0;
+    margin-right: 216px;
   }
 
   .about__paragraph {
     height: 168px;
-    width: 424px;
+    max-width: 424px;
   }
 
   .about__header {
     margin-bottom: 16px;
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__content {
+    width: 424px;
+    margin-top: 0px;
+    margin-right: 216px;
+  }
+
+  .about__paragraph {
+    height: 168px;
+    width: 424px;
   }
 }
 
